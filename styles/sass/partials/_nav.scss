@@ -1,7 +1,48 @@
 .nav-bar {
-    background-image: url(/assets/home-1.jpeg);
+    background-image: url(../assets/home-1.jpeg);
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     padding: 0;
+    
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .search-cart {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .bag,
+    .menu-icon {
+        padding: 10px 5px;
+    }
+
+    .menu {
+        display: flex;
+        margin-left: 400px;
+
+        li {
+            padding: 20px 15px 0 15px;
+        }
+    }
+
+    .logo {
+        margin-top: 25px;
+    }
+
+    a {
+        line-height: 2.2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            color: rgba($color: $treegreen, $alpha: 0.6);
+        }
+    }
 }
