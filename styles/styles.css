@@ -315,6 +315,7 @@ p {
 }
 
 a {
+  font-family: "Raleway";
   text-decoration: none;
   color: inherit;
   -webkit-transition: 0.3s;
@@ -335,12 +336,6 @@ ul {
 
 img {
   width: 100%;
-  display: block;
-}
-
-i {
-  width: 100%;
-  display: block;
 }
 
 button {
@@ -375,19 +370,64 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.nav-bar .bag,
-.nav-bar .menu-icon {
-  padding: 10px 5px;
+.nav-bar .search-cart .bag-counter-container {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.nav-bar .search-cart .bag-counter-container .bag-container,
+.nav-bar .search-cart .bag-counter-container .counter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav-bar .search-cart .bag-counter-container .counter {
+  background-color: #2e992a;
+  color: #f6f6f6;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+  position: relative;
+  z-index: 10;
+  top: 18px;
+  left: 3px;
+}
+.nav-bar .search-cart .bag-counter-container .counter p {
+  font-family: "Raleway";
+  font-size: 13px;
+  font-size: 0.65rem;
+}
+.nav-bar .search-cart button {
+  padding: 0 25px;
+  margin-top: 30px;
 }
 .nav-bar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 400px;
+  margin-left: 350px;
 }
 .nav-bar .menu li {
   padding: 20px 15px 0 15px;
+}
+.nav-bar .menu :last-child {
+  padding-right: 0;
 }
 .nav-bar .logo {
   margin-top: 25px;
@@ -395,7 +435,7 @@ button {
 .nav-bar a {
   line-height: 2.2rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 100;
 }
 .nav-bar a:hover, .nav-bar a:focus {
   color: rgba(46, 153, 42, 0.6);
