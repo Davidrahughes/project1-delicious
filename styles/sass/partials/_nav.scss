@@ -1,9 +1,16 @@
 .nav-bar {
     background-image: url(../assets/home-1.jpeg);
-    min-height: 100vh;
+    min-height: 90vh;
+    width: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     padding: 0;
+
+    &.blog {
+        background-image: url(../assets/blog-1.jpeg);
+        min-height: 50vh;
+    }
     
     .wrapper {
         display: flex;
