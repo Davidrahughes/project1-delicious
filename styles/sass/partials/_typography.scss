@@ -34,29 +34,30 @@ h1,h2,h3,h4 {
 
 h1 {
     @include fontSize(46);
-    text-transform: uppercase;
     line-height: 24px;
+    text-transform: uppercase;
     letter-spacing: 1.1px;
 } //title-text//
 
 h2 {
     @include fontSize(24);
     line-height: 36px;
-    letter-spacing: 0.6px;
     text-transform: capitalize;
+    letter-spacing: 0.6px;
 } //quotes//
 
 h3 {
     @include fontSize(18);
     line-height: 24px;
-    letter-spacing: 0.5px;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 } //footer-heading//
 
 h4 {
-@include fontSize(18);
-line-height: 36px;
-letter-spacing: 0.5px;
+    @include fontSize(18);
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
 }//body-style//
 
 h5 {
@@ -70,8 +71,7 @@ p {
     color: $quinary;
     line-height: 24px;
     letter-spacing: 0.3px;
-
-}
+}//body-text
 
 a {
     font-family: $primary-font;

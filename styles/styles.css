@@ -276,8 +276,8 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 46px;
   font-size: 2.3rem;
-  text-transform: uppercase;
   line-height: 24px;
+  text-transform: uppercase;
   letter-spacing: 1.1px;
 }
 
@@ -285,16 +285,16 @@ h2 {
   font-size: 24px;
   font-size: 1.2rem;
   line-height: 36px;
-  letter-spacing: 0.6px;
   text-transform: capitalize;
+  letter-spacing: 0.6px;
 }
 
 h3 {
   font-size: 18px;
   font-size: 0.9rem;
   line-height: 24px;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 h4 {
@@ -302,6 +302,7 @@ h4 {
   font-size: 0.9rem;
   line-height: 36px;
   letter-spacing: 0.5px;
+  text-transform: capitalize;
 }
 
 h5 {
@@ -314,7 +315,7 @@ h5 {
 p {
   font-size: 14px;
   font-size: 0.7rem;
-  color: #333333;
+  color: #535353;
   line-height: 24px;
   letter-spacing: 0.3px;
 }
@@ -361,6 +362,10 @@ button {
 }
 .nav-bar.blog {
   background-image: url(../assets/blog-1.jpeg);
+  min-height: 50vh;
+}
+.nav-bar.contact {
+  background-image: url(../assets/contact-1.jpeg);
   min-height: 50vh;
 }
 .nav-bar .wrapper {
@@ -450,4 +455,78 @@ button {
 }
 .nav-bar a:hover, .nav-bar a:focus {
   color: rgba(46, 153, 42, 0.6);
+}
+
+footer {
+  background-color: #2e2e2e;
+  color: #f6f6f6;
+  padding: 70px 0 100px;
+}
+footer h1 {
+  color: #2e992a;
+  padding: 10px 0 20px 0;
+}
+footer h4 {
+  color: #f6f6f6;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+footer h5 {
+  color: #999999;
+  line-height: 20px;
+  font-weight: normal;
+}
+footer li {
+  border-bottom: 0.5px solid #999999;
+}
+footer li:first-child,
+footer li:last-child {
+  border-bottom: none;
+}
+footer .wrapper-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+footer .wrapper-footer .address,
+footer .wrapper-footer .posts,
+footer .wrapper-footer .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+  padding: 40px;
+}
+footer .wrapper-footer.address {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+footer .wrapper-footer input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #535353;
+  color: #999999;
+  border: none;
+}
+
+.contact-photo {
+  background-image: url(../assets/contact-2.jpeg);
+  min-height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
 }

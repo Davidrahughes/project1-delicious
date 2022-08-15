@@ -1,0 +1,62 @@
+footer {
+    background-color: $primary;
+    color: $tertiary;
+    padding: 70px 0 100px;
+
+    h1 {
+        color: $treegreen;
+        padding: 10px 0 20px 0;
+    }
+
+    h4 {
+        color: $tertiary;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+
+    h5 {
+        color: $secondary;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+    li {
+        border-bottom: .5px solid $secondary ;
+    }
+
+    li:first-child,
+    li:last-child {
+        border-bottom:none
+    }
+
+    .wrapper-footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+
+        .address,
+        .posts,
+        .subscribe {
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+            padding: 40px;
+        }
+
+        &.address {
+            flex-wrap: wrap;
+        }
+
+        input {
+            appearance: none;
+            background-color: $quinary;
+            color: $secondary;
+            border: none;
+        }
+        // &.subsrcibe {
+
+        // }
+    }
+}

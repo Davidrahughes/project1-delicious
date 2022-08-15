@@ -11,6 +11,11 @@
         background-image: url(../assets/blog-1.jpeg);
         min-height: 50vh;
     }
+
+    &.contact {
+        background-image: url(../assets/contact-1.jpeg);
+        min-height: 50vh;
+    }
     
     .wrapper {
         display: flex;
