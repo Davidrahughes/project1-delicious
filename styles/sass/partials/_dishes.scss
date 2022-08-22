@@ -1,0 +1,66 @@
+.dishes-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+
+    .dishes-img{
+        width: 50%;
+    }
+
+    .list {
+        display: flex;
+        width: 50%;
+
+
+    }
+
+    li::before {
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        margin-right: 8px;
+        content: "";
+    }
+    .vegetarian::before {
+        background-image: url(../assets/lemon-solid.svg);
+    }
+
+    .desserts::before {
+        background-image: url(../assets/mug-solid.svg);
+    }
+
+    .salads::before {
+        background-image: url(../assets/leaf-solid.svg);
+    }
+
+    .appetizers::before {
+        background-image: url(../assets/utensils-solid.svg);
+    }
+
+    .drinks::before {
+        background-image: url(../assets/martini-glass-solid.svg);
+    }
+
+    .side-dishes::before {
+        background-image: url(../assets/spoon-solid.svg);
+    }
+
+        h4 {
+            display: inline-block;
+            text-align: left;
+            }
+
+        p{
+            margin-top: 5px;
+            text-align: left;
+            margin-left: 10px;
+        }
+        }
+    
+
+

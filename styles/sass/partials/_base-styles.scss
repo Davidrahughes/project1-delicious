@@ -13,6 +13,7 @@ ul {
 
 img {
     width: 100%;
+    display: block;
 }
 
 
@@ -21,4 +22,12 @@ button {
     border: none;
     cursor: pointer;
     padding: 15px;
+}
+
+.border {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    border-bottom: 2px solid $treegreen;
 }

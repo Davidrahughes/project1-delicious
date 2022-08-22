@@ -342,6 +342,7 @@ ul {
 
 img {
   width: 100%;
+  display: block;
 }
 
 button {
@@ -349,6 +350,14 @@ button {
   border: none;
   cursor: pointer;
   padding: 15px;
+}
+
+.border {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  border-bottom: 2px solid #2e992a;
 }
 
 .nav-bar {
@@ -429,7 +438,7 @@ button {
   font-size: 13px;
   font-size: 0.65rem;
 }
-.nav-bar .search-cart button {
+.nav-bar .search-cart .menu-icon {
   padding: 0 25px;
   margin-top: 30px;
 }
@@ -519,6 +528,115 @@ footer .wrapper-footer input {
   background-color: #535353;
   color: #999999;
   border: none;
+}
+
+.popular-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0%;
+  width: 100%;
+}
+.popular-flex li {
+  width: 50%;
+}
+.popular-flex li.recipe-button {
+  display: block;
+}
+.popular-flex li .popular-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.popular-flex li .popular-text h3 {
+  font-size: 24px;
+  font-size: 1.2rem;
+  margin: 0px 0 20px 0;
+}
+.popular-flex li .popular-text .wrapper {
+  width: 71%;
+}
+.popular-flex li .popular-text .wrapper p {
+  margin-top: 50px;
+}
+.popular-flex li button {
+  background-color: #2e992a;
+  color: #f6f6f6;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.dishes-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0%;
+  width: 100%;
+}
+.dishes-flex .dishes-img {
+  width: 50%;
+}
+.dishes-flex .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+.dishes-flex li::before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  content: "";
+}
+.dishes-flex .vegetarian::before {
+  background-image: url(../assets/lemon-solid.svg);
+}
+.dishes-flex .desserts::before {
+  background-image: url(../assets/mug-solid.svg);
+}
+.dishes-flex .salads::before {
+  background-image: url(../assets/leaf-solid.svg);
+}
+.dishes-flex .appetizers::before {
+  background-image: url(../assets/utensils-solid.svg);
+}
+.dishes-flex .drinks::before {
+  background-image: url(../assets/martini-glass-solid.svg);
+}
+.dishes-flex .side-dishes::before {
+  background-image: url(../assets/spoon-solid.svg);
+}
+.dishes-flex h4 {
+  display: inline-block;
+  text-align: left;
+}
+.dishes-flex p {
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .contact-photo {

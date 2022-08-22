@@ -1,0 +1,42 @@
+    .popular-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0%;
+        width: 100%;
+
+        li {
+            width: 50%;
+
+            &.recipe-button{
+                display: block;
+            }
+
+            .popular-text {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                h3 {
+                    @include fontSize(24);
+                    margin: 0px 0 20px 0;
+                }
+                .wrapper {
+                    width: 71%;
+
+                    p{
+                        margin-top: 50px;
+                    }
+                }
+            }
+            button {
+                background-color: $treegreen;
+                color: $tertiary;
+                border: none;
+                cursor: pointer;
+                padding: 15px;
+            }
+        }
+    }
+
