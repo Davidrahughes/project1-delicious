@@ -361,6 +361,14 @@ button {
   border-bottom: 2px solid #2e992a;
 }
 
+.bottom-border {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+}
+
 .nav-bar {
   background-image: url(../assets/home-1.jpeg);
   min-height: 90vh;
@@ -378,7 +386,7 @@ button {
   background-image: url(../assets/contact-1.jpeg);
   min-height: 50vh;
 }
-.nav-bar .wrapper {
+.nav-bar .nav-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,32 +396,37 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
-.nav-bar .search-cart {
+.nav-bar .nav-flex .logo-container {
+  width: 20%;
+  margin-top: 20px;
+}
+.nav-bar .nav-flex .menu-container {
+  width: 75%;
+  margin-top: 20px;
+}
+.nav-bar .nav-flex .search-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 1%;
+  margin-top: 20px;
 }
-.nav-bar .search-cart .bag-counter-container {
-  width: 16px;
-  height: 16px;
+.nav-bar .nav-flex .search-cart .bag-counter-container {
+  width: 30px;
+  height: 10px;
   position: relative;
 }
-.nav-bar .search-cart .bag-counter-container .bag-container,
-.nav-bar .search-cart .bag-counter-container .counter {
+.nav-bar .nav-flex .search-cart .bag-counter-container .bag-container,
+.nav-bar .nav-flex .search-cart .bag-counter-container .counter {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-.nav-bar .search-cart .bag-counter-container .counter {
+.nav-bar .nav-flex .search-cart .bag-counter-container .counter {
   background-color: #2e992a;
   color: #f6f6f6;
   width: 17px;
@@ -434,14 +447,10 @@ button {
   top: 18px;
   left: 3px;
 }
-.nav-bar .search-cart .bag-counter-container .counter p {
+.nav-bar .nav-flex .search-cart .bag-counter-container .counter p {
   font-family: "Raleway";
   font-size: 13px;
   font-size: 0.65rem;
-}
-.nav-bar .search-cart .menu-icon {
-  padding: 0 25px;
-  margin-top: 30px;
 }
 .nav-bar .menu {
   display: -webkit-box;
@@ -450,7 +459,7 @@ button {
   margin-left: 350px;
 }
 .nav-bar .menu li {
-  padding: 20px 15px 0 15px;
+  padding: 0px 15px 0 15px;
 }
 .nav-bar .menu :last-child {
   padding-right: 0;
@@ -547,6 +556,7 @@ footer .wrapper-footer input {
 }
 .popular-flex li {
   width: 50%;
+  text-align: center;
 }
 .popular-flex li.recipe-button {
   display: block;
@@ -591,7 +601,7 @@ footer .wrapper-footer input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  padding: 0%;
+  padding: 0;
   width: 100%;
   background-color: #f6f6f6;
 }
@@ -603,8 +613,12 @@ footer .wrapper-footer input {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
+  padding: 50px;
 }
-.dishes-flex li::before {
+.dishes-flex .list li {
+  margin: 0 20px 10px 20px;
+}
+.dishes-flex .list li::before {
   display: inline-block;
   vertical-align: middle;
   width: 30px;
@@ -613,32 +627,34 @@ footer .wrapper-footer input {
   margin-right: 8px;
   content: "";
 }
-.dishes-flex .vegetarian::before {
+.dishes-flex .list .vegetarian::before {
   background-image: url(../assets/lemon-solid.svg);
 }
-.dishes-flex .desserts::before {
+.dishes-flex .list .desserts::before {
   background-image: url(../assets/mug-solid.svg);
 }
-.dishes-flex .salads::before {
+.dishes-flex .list .salads::before {
   background-image: url(../assets/leaf-solid.svg);
 }
-.dishes-flex .appetizers::before {
+.dishes-flex .list .appetizers::before {
   background-image: url(../assets/utensils-solid.svg);
 }
-.dishes-flex .drinks::before {
+.dishes-flex .list .drinks::before {
   background-image: url(../assets/martini-glass-solid.svg);
 }
-.dishes-flex .side-dishes::before {
+.dishes-flex .list .side-dishes::before {
   background-image: url(../assets/spoon-solid.svg);
 }
-.dishes-flex h4 {
+.dishes-flex .list h4 {
+  text-transform: uppercase;
   display: inline-block;
   text-align: left;
 }
-.dishes-flex p {
-  margin-top: 5px;
+.dishes-flex .list p {
+  line-height: 20px;
   text-align: left;
-  margin-left: 10px;
+  margin: 0px 0px 0px 40px;
+  font-size: 0.6rem;
 }
 
 .restaurant-container {
@@ -782,6 +798,107 @@ footer .wrapper-footer input {
 }
 .quote .wrapper .arrow-flex .fa-angle-left {
   color: #2e2e2e;
+}
+
+.blog-post {
+  margin-top: 150px;
+}
+.blog-post span {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.blog-post .blog-title {
+  padding-bottom: 15px;
+}
+.blog-post .blog-title h3 {
+  font-size: 34px;
+  font-size: 1.7rem;
+  line-height: 10px;
+}
+.blog-post .blog-body {
+  padding-bottom: 20px;
+}
+.blog-post .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog-post .share ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog-post .share ul li {
+  padding: 10px;
+}
+
+.highlight {
+  margin-top: 50px;
+}
+.highlight .wrapper {
+  width: 60%;
+}
+.highlight .wrapper .highlight-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-bottom: 30px;
+}
+.highlight .wrapper .highlight-flex .highlight-img {
+  width: 20%;
+}
+.highlight .wrapper .highlight-flex .highlight-text {
+  width: 77%;
+  background-color: #f6f6f6;
+}
+.highlight .wrapper .highlight-flex .highlight-text span {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.highlight .wrapper .highlight-flex .highlight-text p {
+  margin: 25px 0 0 25px;
+}
+
+span {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p span {
+  font-family: inherit;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.post-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.post-flex .post {
+  width: 31%;
 }
 
 .contact-photo {

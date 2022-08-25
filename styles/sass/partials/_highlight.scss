@@ -1,0 +1,33 @@
+.highlight {
+    margin-top: 50px;
+
+    .wrapper {
+        width: 60%;
+
+        .highlight-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            padding-bottom: 30px;
+
+            .highlight-img {
+                width: 20%;
+            }
+
+            .highlight-text {
+                width: 77%;
+                background-color: $tertiary;
+
+                span {
+                    font-family: $primary-font;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                p {
+                    margin: 25px 0 0 25px;
+                }
+            }
+        }
+    }
+}

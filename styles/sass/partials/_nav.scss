@@ -17,58 +17,63 @@
         min-height: 50vh;
     }
     
-    .wrapper {
+    .nav-flex{
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    
-    .search-cart {
-        display: flex;
-        align-items: center;
-        // margin-top: 30px;
-        justify-content: center;
+        width: 100%;
 
-
-        .bag-counter-container{
-            width: 16px;
-            height: 16px;
-            position: relative;
-
-            .bag-container,
-            .counter {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-
-            .counter {
-                background-color: $treegreen;
-                color: $tertiary;
-                width: 17px;
-                height: 17px;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 5px;
-                position: relative;
-                z-index: 10;
-                top: 18px;
-                left: 3px;
-        
-                p {
-                    font-family: $primary-font;
-                    @include fontSize(13);
-                }
-            }
+        .logo-container {
+            width: 20%;
+            margin-top: 20px;
         }
 
-        .menu-icon {
-            padding: 0 25px;
-            margin-top: 30px;
+        .menu-container {
+            width: 75%;
+            margin-top: 20px;
+        }
+        
+        .search-cart {
+            display: flex;
+            width: 1%;
+            margin-top: 20px;
+            
+            
+            .bag-counter-container{
+                width: 30px;
+                height: 10px;
+                position: relative;
+                
+                .bag-container,
+                .counter {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                
+                .counter {
+                    background-color: $treegreen;
+                    color: $tertiary;
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 5px;
+                    position: relative;
+                    z-index: 10;
+                    top: 18px;
+                    left: 3px;
+                    
+                    p {
+                        font-family: $primary-font;
+                        @include fontSize(13);
+                    }
+                }
+            }
         }
     }
 
@@ -79,7 +84,7 @@
         margin-left: 350px;
 
         li {
-            padding: 20px 15px 0 15px;
+            padding: 0px 15px 0 15px;
         }
 
         :last-child {

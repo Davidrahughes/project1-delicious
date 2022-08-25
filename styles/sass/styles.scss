@@ -4,14 +4,21 @@
 @import "./partials/typography";
 @import "./partials/base-styles";
 
+
 @import "./partials/nav";
 @import "./partials/header";
 @import "./partials/footer";
 
+// Index.html
 @import "./partials/popular";
 @import "./partials/dishes";
 @import "./partials/restaurant";
 @import "./partials/gallery";
 @import "./partials/quote";
+
+//Blog.html
+@import "./partials/blog-post";
+@import "./partials/highlight";
+@import "./partials/related";
 
 @import "./partials/contact-photo"

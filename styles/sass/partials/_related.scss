@@ -1,0 +1,26 @@
+span {
+    font-family: $primary-font;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p span {
+    font-family: inherit;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+    .post-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .post {
+        width: 31%;
+        }
+    }
+
+
+
+
