@@ -56,7 +56,7 @@
     <section class="blog-post">
         <div class="wrapper blog">
             <div class="blog-title">
-                <h3>Pineapple chicken</h3>
+                <h1>Pineapple chicken</h1>
                 <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
             </div>
             <div class="blog-body">
@@ -100,7 +100,9 @@
     </section><!--end. highlight-->
     <section class="related">
         <div class="wrapper blog">
-            <p><span>related posts</span></p> 
+            <div class="related title">
+                <p><span>related posts</span></p> 
+            </div>
             <div class="post-flex">
                 <div class="post 1">
                     <ul>
@@ -130,24 +132,25 @@
             </div>
         </div><!--end. wrapper-->
     </section><!--end.related-->
-
     <section class="comments">
         <div class="wrapper blog">
-            <h4>02 comments</h4>
+            <div class="comment title">
+                <p><span>02 comments</span></p> 
+            </div>
             <div class="comment-flex">
-                <div class="comment-1">
+                <div class="comment top">
                     <ul>
-                        <li><img src="./assets/blog-6.jpeg" alt=""></li>
-                        <li><p><span>Lucatony Avaro</span> - Web Developer</p>
+                        <li class="comment image"><img src="./assets/blog-6.jpeg" alt=""></li>
+                        <li class="comment-text"><p><span>Lucatony Avaro</span> - Web Developer</p>
                             <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
                             <p class="date">July 17, 2015 at 15 hours ago</p>
                         </li>
                     </ul>
                 </div><!--end. comment-1-->
-                <div class="comment-2">
+                <div class="comment bottom">
                     <ul>
-                        <li><img src="./assets/blog-7.jpeg" alt=""></li>
-                        <li><p><span>Brain Hudson</span> - Web Developer</p>
+                        <li class="comment image"><img src="./assets/blog-7.jpeg" alt=""></li>
+                        <li class="comment-text"><p><span>Brain Hudson</span> - Web Developer</p>
                             <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jicama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut.</p>
                             <p class="date">July 17, 2015 at 15 hours ago</p>
                         </li>
@@ -156,25 +159,34 @@
             </div><!--end. comment-flex-->
         </div><!--end.wrapper-->
     </section><!--end. comments-->
-
     <section class="form">
         <div class="wrapper blog">
-            <h4>leave a comment</h4>
-            <p>Your email address will not be published. Required fields are marked *</p>
-            <form action="" method="POST" class="contactForm">
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" id="name" placeholder="Name*">
-
-                <label for="email" class="sr-only">Email</label>
-                <input type="email" id="email" placeholder="Email*">
-
-                <label for="website" class="sr-only">Website</label>
-                <input type="text" id="website" placeholder="Your Website">
-
-                <label for="comment" class="sr-only">Comment for me</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
-
-                <button class="button">Submit Comment</button>
+            <div class="form title">
+                <p><span>leave a comment</span></p>
+            </div>
+            <div class="form-subtitle">
+                <p>Your email address will not be published. Required fields are marked *</p>
+            </div>
+            <form action="" method="POST" class="contact-form">
+                <div class="form-flex">
+                    <div class="name box">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" maxlength="20" size="35" placeholder="Name *">
+                    </div>
+                    <div class="email box">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" maxlength="20" size="35" placeholder="Email *">
+                    </div>
+                    <div class="website box">
+                        <label for="website" class="sr-only">Website</label>
+                        <input type="text" id="website" maxlength="20" size="35" placeholder="Your Website">
+                    </div>
+                </div>
+                <div class="comment box">
+                    <label for="comment" class="sr-only">Comment for me</label>
+                    <textarea name="message" id="message" cols="20" rows="10" placeholder="Comment"></textarea>
+                </div> 
+                <button class="big">submit comment</button>
             </form>
         </div>
     </section>

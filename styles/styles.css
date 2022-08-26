@@ -334,6 +334,9 @@ a {
   width: 90%;
   margin: 0 auto;
 }
+.wrapper.blog {
+  width: 62%;
+}
 
 ul {
   list-style: none;
@@ -347,10 +350,19 @@ img {
 }
 
 button {
+  text-transform: uppercase;
+  font-family: "Raleway";
   background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 15px;
+}
+button.big {
+  background-color: #2e992a;
+  color: #f6f6f6;
+  border: none;
+  cursor: pointer;
+  padding: 20px 50px;
 }
 
 .border {
@@ -367,6 +379,17 @@ button {
   margin: 0 auto;
   width: 100%;
   border-bottom: 1px solid #999999;
+}
+
+.title {
+  padding: 15px 0;
+}
+.title p span {
+  font-size: 18px;
+  font-size: 0.9rem;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .nav-bar {
@@ -580,14 +603,7 @@ footer .wrapper-footer input {
   width: 71%;
 }
 .popular-flex li .popular-text .wrapper p {
-  margin-top: 50px;
-}
-.popular-flex li button {
-  background-color: #2e992a;
-  color: #f6f6f6;
-  border: none;
-  cursor: pointer;
-  padding: 15px;
+  margin: 30px 0;
 }
 
 .dishes-flex {
@@ -873,18 +889,6 @@ footer .wrapper-footer input {
   margin: 25px 0 0 25px;
 }
 
-span {
-  font-family: "Raleway";
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-p span {
-  font-family: inherit;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-
 .post-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,6 +903,157 @@ p span {
 }
 .post-flex .post {
   width: 31%;
+}
+.post-flex .post h3 {
+  padding-top: 15px;
+}
+.post-flex .post p {
+  margin: 0;
+  padding-bottom: 25px;
+}
+.post-flex .post span {
+  font-weight: bolder;
+}
+
+.comment-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+.comment-flex .comment {
+  margin-bottom: 25px;
+}
+.comment-flex .comment ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comment-flex .comment ul .image {
+  width: 100px;
+  height: 100px;
+  width: 10%;
+}
+.comment-flex .comment ul .comment-text {
+  background-color: #f6f6f6;
+  width: 87%;
+}
+.comment-flex .comment ul .comment-text p {
+  margin: 0 0 15px 20px;
+}
+.comment-flex .comment ul .comment-text span {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 0.9rem;
+}
+.comment-flex .comment ul .comment-text .date {
+  font-family: "Raleway";
+}
+.comment-flex .comment ul li:nth-child(2):before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  content: "";
+}
+.comment-flex .comment ul .comment-text::before {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 16px solid #f6f6f6;
+  border-bottom: 8px solid transparent;
+  position: relative;
+  right: 15px;
+  top: 15px;
+}
+
+.title {
+  padding: 0;
+}
+.title p {
+  line-height: 0;
+}
+
+.form-subtitle {
+  font-style: italic;
+}
+
+.contact-form .form-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-form input,
+.contact-form textarea {
+  border: 0.5px solid #999999;
+  font-family: "Lora";
+  font-size: 16px;
+  font-size: 0.8rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
+  opacity: 0.5;
+}
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {
+  opacity: 0.5;
+}
+.contact-form input::-ms-input-placeholder, .contact-form textarea::-ms-input-placeholder {
+  opacity: 0.5;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  opacity: 0.5;
+}
+.contact-form input:hover, .contact-form input:focus,
+.contact-form textarea:hover,
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid #2e992a;
+  border-color: #2e992a;
+  -webkit-box-shadow: #2e992a;
+          box-shadow: #2e992a;
+}
+.contact-form textarea {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+.contact-form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #f6f6f6;
+}
+.contact-form .name input,
+.contact-form .email input,
+.contact-form .website input {
+  height: 35px;
+}
+.contact-form .comment textarea {
+  line-height: 20px;
+}
+.contact-form .big {
+  margin: 20px 0 200px 0;
 }
 
 .contact-photo {

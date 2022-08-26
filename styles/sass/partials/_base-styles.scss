@@ -2,6 +2,10 @@
     max-width: 1289px;
     width: 90%;
     margin: 0 auto;
+
+    &.blog {
+        width: 62%;
+    }
     
 }
 
@@ -20,10 +24,20 @@ img {
 
 
 button {
+    text-transform: uppercase;
+    font-family: $primary-font;
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 15px;
+
+    &.big {
+        background-color: $treegreen;
+        color: $tertiary;
+        border: none;
+        cursor: pointer;
+        padding: 20px 50px;
+    } 
 }
 
 .border {
@@ -40,4 +54,15 @@ button {
     margin: 0 auto;
     width: 100%;
     border-bottom: 1px solid $secondary;
+}
+
+.title {
+    padding: 15px 0;
+
+    p span {
+        @include fontSize(18);
+        font-family: $primary-font;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
 }

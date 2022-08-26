@@ -1,0 +1,63 @@
+.comment-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .comment {
+        margin-bottom: 25px;
+
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .image{
+                width: 100px;
+                height: 100px;
+                width: 10%;
+            }
+
+            .comment-text {
+                background-color: $tertiary;
+                width: 87%;
+
+                p {
+                    margin: 0 0 15px 20px;
+                }
+
+                span {
+                    font-family: $primary-font;
+                    font-weight: bold;
+                    @include fontSize(18);
+                }
+
+                .date {
+                    font-family: $primary-font;
+                }
+            }
+
+            li:nth-child(2):before {
+                display: inline-block;
+                vertical-align: middle;
+                width: 15px;
+                height: 15px;
+                background-repeat: no-repeat;
+                content: "";
+            }
+
+            .comment-text::before {
+                width: 0;
+                height: 0;
+                border-top: 8px solid transparent;
+                border-right: 16px solid $tertiary;
+                border-bottom: 8px solid transparent;
+                position: relative;
+                right: 15px;
+                top: 15px;
+                
+            }
+        }
+    }
+}
+
