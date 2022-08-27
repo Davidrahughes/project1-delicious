@@ -1,0 +1,38 @@
+.drop-box {
+
+    .wrapper {
+
+        &.contact {
+            display: flex;
+            width: 60%;
+        }
+    }
+
+    .flex-box {
+        display: flex;
+        width: 100%;
+        
+        .drop-form-container{
+            padding-left: 10px;
+            width: 55%;
+            
+            
+            .drop-form{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        .contact-details-container {
+            background-color: $tertiary;
+            padding-right: 5px;
+            width: 45%;
+        }
+    }
+
+}
+
+h2 {
+    text-transform: uppercase;
+    margin: 50px 0;
+}

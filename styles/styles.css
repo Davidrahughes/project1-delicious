@@ -382,7 +382,7 @@ button.big {
 }
 
 .title {
-  padding: 15px 0;
+  padding: 20px 0;
 }
 .title p span {
   font-size: 18px;
@@ -390,6 +390,65 @@ button.big {
   font-family: "Raleway";
   text-transform: uppercase;
   font-weight: bold;
+}
+
+input,
+textarea {
+  border: 1px solid #999999;
+  font-family: "Lora";
+  font-size: 16px;
+  font-size: 0.8rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 0.5;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 0.5;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  opacity: 0.5;
+}
+input::placeholder,
+textarea::placeholder {
+  opacity: 0.5;
+}
+input:hover, input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border: 2px solid #2e992a;
+  border-color: #2e992a;
+  -webkit-box-shadow: #2e992a;
+          box-shadow: #2e992a;
+}
+
+textarea {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  resize: none;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #f6f6f6;
+}
+
+.name input,
+.email input,
+.website input {
+  height: 35px;
+}
+
+.comment textarea {
+  line-height: 20px;
 }
 
 .nav-bar {
@@ -980,11 +1039,12 @@ footer .wrapper-footer input {
   top: 15px;
 }
 
-.title {
-  padding: 0;
-}
-.title p {
+form p {
   line-height: 0;
+}
+
+.form {
+  padding: 20px 0 0 0;
 }
 
 .form-subtitle {
@@ -998,62 +1058,46 @@ footer .wrapper-footer input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.contact-form input,
-.contact-form textarea {
-  border: 0.5px solid #999999;
-  font-family: "Lora";
-  font-size: 16px;
-  font-size: 0.8rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
-  opacity: 0.5;
-}
-.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
-  opacity: 0.5;
-}
-.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {
-  opacity: 0.5;
-}
-.contact-form input::-ms-input-placeholder, .contact-form textarea::-ms-input-placeholder {
-  opacity: 0.5;
-}
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  opacity: 0.5;
-}
-.contact-form input:hover, .contact-form input:focus,
-.contact-form textarea:hover,
-.contact-form textarea:focus {
-  outline: none;
-  border: 2px solid #2e992a;
-  border-color: #2e992a;
-  -webkit-box-shadow: #2e992a;
-          box-shadow: #2e992a;
-}
-.contact-form textarea {
-  display: inline-block;
   width: 100%;
-  margin-top: 10px;
-}
-.contact-form select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: #f6f6f6;
-}
-.contact-form .name input,
-.contact-form .email input,
-.contact-form .website input {
-  height: 35px;
-}
-.contact-form .comment textarea {
-  line-height: 20px;
 }
 .contact-form .big {
   margin: 20px 0 200px 0;
+}
+
+.drop-box .wrapper.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+}
+.drop-box .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.drop-box .flex-box .drop-form-container {
+  padding-left: 10px;
+  width: 55%;
+}
+.drop-box .flex-box .drop-form-container .drop-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.drop-box .flex-box .contact-details-container {
+  background-color: #f6f6f6;
+  padding-right: 5px;
+  width: 45%;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 50px 0;
 }
 
 .contact-photo {

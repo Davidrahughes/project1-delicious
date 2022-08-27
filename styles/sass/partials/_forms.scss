@@ -1,9 +1,12 @@
-.title {
-    padding: 0;
+form{
 
     p {
         line-height: 0;
     }
+}
+
+.form {
+    padding: 20px 0 0 0;
 }
 
 .form-subtitle {
@@ -15,55 +18,9 @@
     .form-flex {
         display: flex;
         justify-content: space-between;
-    }
-    
-    input,
-    textarea{
-        border: .5px solid $secondary;
-        font-family: $secondary-font;
-        @include fontSize(16);
-        transition: 0.3s;
-        
-        
-        &::placeholder {
-            opacity: .5;
-        }
-        
-        &:hover,
-        &:focus {
-            outline: none;
-            border: 2px solid $treegreen;
-            border-color: $treegreen;
-            box-shadow: $treegreen;
-        }
-        
-    }
-    
-    textarea {
-        display: inline-block;
         width: 100%;
-        margin-top: 10px;
     }
     
-    select {
-        appearance: none;
-        background-color: $tertiary;
-    }
-    
-    .name,
-    .email,
-    .website {
-        
-        input {
-            height: 35px;
-        }
-    }
-    
-    .comment {
-        textarea {
-            line-height: 20px;
-        }
-    }
     .big {
         margin: 20px 0 200px 0;
     }
