@@ -443,7 +443,9 @@ select {
 
 .name input,
 .email input,
-.website input {
+.website input,
+.your-email input,
+.subject input {
   height: 35px;
 }
 
@@ -1158,23 +1160,16 @@ form p {
   margin: 20px 0 200px 0;
 }
 
-.drop-box .wrapper.contact {
+.contact-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
 }
-.drop-box .flex-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+.contact-flex .contact-left {
+  width: 51%;
+  margin-left: 20%;
 }
-.drop-box .flex-box .drop-form-container {
-  padding-left: 10px;
-  width: 55%;
-}
-.drop-box .flex-box .drop-form-container .drop-form {
+.contact-flex .contact-left .drop-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1183,15 +1178,92 @@ form p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.drop-box .flex-box .contact-details-container {
+.contact-flex .contact-left .drop-form form {
+  margin-right: 30px;
+}
+.contact-flex .contact-left .drop-form .form-flex-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact-flex .contact-left .drop-form .form-flex-top li {
+  width: 50%;
+}
+.contact-flex .contact-left .drop-form .form-flex-top li.name {
+  margin-right: 10px;
+}
+.contact-flex .contact-left .drop-form .form-flex-top li.your-email {
+  margin-left: 10px;
+}
+.contact-flex .contact-left .drop-form .form-flex-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+.contact-flex .contact-left .drop-form .form-flex-bottom li {
+  width: 100%;
+}
+.contact-flex .contact-left .drop-form button, .contact-flex .contact-left .drop-form i {
+  color: #2e992a;
+}
+.contact-flex input,
+.contact-flex textarea {
+  width: 100%;
   background-color: #f6f6f6;
-  padding-right: 5px;
-  width: 45%;
+  border: none;
+  text-indent: 2%;
+}
+.contact-flex .contact-right {
+  width: 49%;
+  background-color: #f6f6f6;
+}
+.contact-flex .contact-right .contact-details {
+  margin: 0 51% 0 30px;
+}
+.contact-flex .contact-right .working-hours {
+  margin: 30px 0;
+}
+.contact-flex .contact-right .working-hours .hours {
+  margin: 0;
+}
+.contact-flex .contact-right .working-hours .hours p {
+  margin: 0;
+}
+.contact-flex .contact-right .working-hours .hours span {
+  font-family: "Raleway";
+  font-weight: bold;
+}
+.contact-flex .contact-right .working-hours .days-off p {
+  color: #b6b6b6;
+  margin: 0;
+}
+.contact-flex .contact-right .info .info-location,
+.contact-flex .contact-right .info .info-email,
+.contact-flex .contact-right .info .info-phone {
+  padding-bottom: 25px;
+}
+.contact-flex .contact-right .info p {
+  color: #b6b6b6;
+  margin: 0;
 }
 
 h2 {
   text-transform: uppercase;
-  margin: 50px 0;
+  margin: 50px 0 30px 0;
+}
+
+h4 {
+  text-transform: uppercase;
 }
 
 .contact-photo {

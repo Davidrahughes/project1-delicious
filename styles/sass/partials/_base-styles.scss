@@ -9,7 +9,6 @@
     
 }
 
-
 ul {
     list-style: none;
     margin: 0;
@@ -21,7 +20,6 @@ img {
     width: 100%;
     display: block;
 }
-
 
 button {
     text-transform: uppercase;
@@ -103,7 +101,9 @@ textarea {
     
     .name,
     .email,
-    .website {
+    .website,
+    .your-email,
+    .subject {
 
         input {
             height: 35px;
