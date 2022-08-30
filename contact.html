@@ -11,47 +11,63 @@
 <body>
     <a href="#main-content" class="skip-link"> Skip to the main content.</a>
     <header>
-    <nav class="nav-bar contact">
-        <div class="wrapper">
-            <div class="nav-flex">
-                <div class="logo-container">
-                    <a href="#" class="logo">
-                        <h1>Delicious</h1>
-                    </a>
-                </div>
-                <div class="menu-container">
-                    <ul class="menu">
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#recipes">recipes</a></li>
-                        <li><a href="#nutrition">nutrition</a></li>
-                        <li><a href="#blog">blog</a></li>
-                        <li><a href="#shop">shop</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul><!--end. menu-->
-                </div><!--end. menu-container-->
-                
-                <div class="search-cart">
-                    <div class="bag-counter-container">
-                        <div class="bag-container">
-                            <a href="#" class="bag">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </a>
-                        </div><!--end. bag-container-->
-                        <div class="counter">
-                            <p class="small-copy">2</p>
-                        </div><!--end. counter-->
-                    </div><!--end. bag-counter-->
+        <nav class="nav-bar">
+            <div class="wrapper">
+                <div class="nav-flex">
+                    <div class="logo-container">
+                        <a href="#" class="logo">
+                            <h1>Delicious</h1>
+                        </a>
+                    </div>
+                    <div class="menu-toggle-button">
+                        <input id="menu-toggle" type="checkbox"/>
+                        <label class='menu-button-container' for="menu-toggle">
+                            <div class='menu-button'>
+                            </div>
+                        </div>
+                    </label>
+                    <div class="menu-container">
+                        <ul class="menu-hamburger">
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#recipes">recipes</a></li>
+                            <li><a href="#nutrition">nutrition</a></li>
+                            <li><a href="#blog">blog</a></li>
+                            <li><a href="#shop">shop</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#recipes">recipes</a></li>
+                            <li><a href="#nutrition">nutrition</a></li>
+                            <li><a href="#blog">blog</a></li>
+                            <li><a href="#shop">shop</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul><!--end. menu-->
+                    </div><!--end. menu-container-->
                     
-                    <button class="menu-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button> 
-                </div><!-- end. search-cart -->
-            </div><!--end. nav-flex-->
-        </div><!--end. wrapper-->
-    </nav><!--end. nav-bar-->
-    </header><!--end. header-->
-    <main class="main-content">
+                    <div class="search-cart">
+                        <div class="bag-counter-container">
+                            <div class="bag-container">
+                                <a href="#" class="bag">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </a>
+                            </div><!--end. bag-container-->
+                            <div class="counter">
+                                <p class="small-copy">2</p>
+                            </div><!--end. counter-->
+                        </div><!--end. bag-counter-->
+                        
+                        <button class="menu-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button> 
+                    </div><!-- end. search-cart -->
+                </div><!--end. nav-flex-->
+            </div><!--end. wrapper-->
+        </nav><!--end. nav-bar-->
+        </header><!--end. header-->
+    <main id="main-content">
         <div class="contact-flex">
             <section class="contact-left">
                     <div class="drop-form">
@@ -116,7 +132,8 @@
             <ul class="address">
                 <li><h1>delicious</h1></li>
                 <li><h5>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</h5></li>
-                <li><h5>A delicioud restaurant<span>Toronto, Ontario</span></h5></li>
+                <li><h5>A delicious restaurant
+                    <span>Toronto, Ontario</span></h5></li>
                 <li><h5>yum@food.com</h5></li>
                 <li><h5>+1 234 567 8910</h5></li>
             </ul>
@@ -146,6 +163,7 @@
                 </ul>
             </ul>
         </div><!--end. wrapper-footer-->
+
         <div class="wrapper-copyrights">
             <div class="copyright">
                 <h5>Copyrights © 2015 by <span>POLAR. </span>All Rights reserved.</h5>

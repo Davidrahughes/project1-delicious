@@ -11,6 +11,12 @@
 }
 
 @font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway/static/Raleway-Light.ttf);
+    font-weight: normal;
+}
+
+@font-face {
     font-family: "Lora";
     src: url(../fonts/Lora/static/Lora-Regular.ttf);
     font-weight: normal;
@@ -75,6 +81,7 @@ p {
 
 a {
     font-family: $primary-font;
+    font-weight: bold;
     text-decoration: none;
     color: inherit;
     transition: 0.3s;

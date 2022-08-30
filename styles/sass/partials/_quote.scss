@@ -17,35 +17,107 @@
             }
     
             .border {
-                width: 5%;
+                padding-top: 20px;
+                width: 15%;
             }
 
-            p:before {
-                display: block;
-                // background-image: url(../assets/quote-left-solid.svg);
-                // background-repeat: no-repeat;
-                @include fontSize(100);
-                color: $tertiary;
-                position: relative;
-                right: 50px;
-                top:20px;
-                width: 30px;
-                height: 30px;
-                content: "\201C";
+            .quote-text {
+                display: flex;
             }
+
+            p {
+                width: 100%;
+                @include fontSize(15);
+                font-style: italic;
+                font-family: $primary-font;
+                font-weight: lighter;
+            }
+
+            blockquote{
+                display: block;
+                max-width: 90%;
+                position: relative;
+                padding: 0 5px;
+                margin: 0 auto;
+            }
+            blockquote:before, blockquote:after {
+                content:"“";
+                @include fontSize(80);
+                font-family: $secondary-font;
+                color: $tertiary;
+                position: absolute;
+                left: -30px;
+                top: 5px;
+            }
+            blockquote:after {
+                content:"”";
+                right: -30px;
+                left: auto;
+                top: 80px;
+            }
+            // blockquote {
+            //     text-align: center;
+            //     position: relative;
+            // }
+
+            // blockquote::after, blockquote:before {
+            //     color: $tertiary;
+            //     @include fontSize(100);
+            //     line-height: 10px;
+            // }
+
+            // blockquote:after {
+            //     content: close-quote;
+            //     vertical-align: bottom;
+            //     margin-left: 600px;
+            // }
+
+            // blockquote:before {
+            //     content: open-quote;
+            //     vertical-align:text-top;
+            //     margin-right: 600px;
+            // }
+
+            // blockquote {
+            //     text-indent: -0.45em;
+            // }
+
+            // @supports (hanging-punctuation: first) {
+            //     blockquote {
+            //         text-indent: 0;
+            //         hanging-punctuation: first;
+            //     }
+            // }
+
+            // p:before {
+            //     // display: block;
+            //     @include fontSize(100);
+            //     // position: relative;
+            //     // right: 50px;
+            //     // top:20px;
+            //     // width: 30px;
+            //     // height: 30px;
+            //     // content: "\201C";
+            //     content: open-quote;
+            //     text-align: left;
+            //     color: $tertiary;
+            // }
         
-            p:after {
-                display: block;
-                // background-image: url(../assets/quote-right-solid.svg);
-                // background-repeat: no-repeat;
-                @include fontSize(100);
-                color: $tertiary;
-                position: relative;
-                left: 600px;
-                width: 30px;
-                height: 30px;
-                content: "\201D";
-            }
+            // p:after {
+            //     // display: inline-block;
+            //     @include fontSize(100);
+            //     line-height: 20px;
+            //     // color: $tertiary;
+            //     // // position: relative;
+            //     // // left: 600px;
+            //     // // width: 30px;
+            //     // height: 30px;
+            //     // content: "\201D";
+            //     content: close-quote;
+            //     text-align: right;
+            //     color: $tertiary;
+
+            // }
 
             .arrow-flex {
                 display: flex;
