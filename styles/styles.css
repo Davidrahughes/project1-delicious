@@ -1733,11 +1733,11 @@ footer .wrapper-footer .subscribe {
   }
 }
 @media (max-width: 700px) {
-  wrapper {
-    max-width: 860px;
+  .wrapper {
+    max-width: 700px;
     width: 100%;
   }
-  wrapper.blog {
+  .wrapper.blog {
     width: 100%;
   }
   .contact-form .form-flex {
@@ -1755,27 +1755,32 @@ footer .wrapper-footer .subscribe {
 .website {
     margin-top: 10px;
   }
-}
-@media (max-width: 400px) {
-  .wrapper {
-    max-width: 400px;
-    width: 100%;
-    margin: 0;
+  footer h4 {
+    font-size: 1rem;
+    padding: 0;
+    line-height: normal;
   }
-  .nav-bar .menu-toggle-button {
-    margin: 15px 5px 0 0;
+  footer .wrapper-footer input {
+    font-size: 0.55rem;
   }
   footer .wrapper-footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: left;
     padding-top: 20px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  footer .wrapper-footer .address {
-    width: 33%;
-  }
-  footer .wrapper-footer .posts {
-    width: 33%;
+  footer .wrapper-footer .address,
+footer .wrapper-footer .posts {
+    width: 45%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .wrapper-footer .subscribe {
     width: 100%;
@@ -1787,13 +1792,15 @@ footer .wrapper-footer .subscribe {
     font-size: 1rem;
     padding: 0;
   }
-  footer h4 {
-    font-size: 1rem;
-    padding: 0;
-    line-height: normal;
+}
+@media (max-width: 400px) {
+  .wrapper {
+    max-width: 400px;
+    width: 100%;
+    margin: 0;
   }
-  footer .wrapper-footer input {
-    font-size: 0.55rem;
+  .nav-bar .menu-toggle-button {
+    margin: 15px 5px 0 0;
   }
   .blog-title h1 {
     font-size: 1.5rem;
