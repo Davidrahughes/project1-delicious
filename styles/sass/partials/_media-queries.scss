@@ -252,13 +252,12 @@
             margin: 0 auto;
             
             li {
-                padding: 20px 0;
+                width: 100%;
             }
             
             .list {
                 flex-direction: column;
-                padding-top: 20px;
-                width: 100%;
+                margin: 20px 0;
 
                 li::before {
                     background-color: $treegreen;
@@ -267,6 +266,12 @@
             }
         }
         
+    }
+
+    .popular-img {
+        margin-top: 20px;
+        border: 2px solid $treegreen;
+        width: 100%;
     }
 
     .gallery {
@@ -285,7 +290,7 @@
         margin: 75px 0;
         
         .img-container-restaurant {
-            width: 250px;
+            width: 225px;
             height: 147.5px;
             background-size: contain;
         }
@@ -522,6 +527,14 @@
 
     .blog-body p {
         font-size: 1rem;
+    }
+
+    .dishes-flex .list {
+        width: 80%;
+
+        li {
+            margin: 0;
+        }
     }
 
 }
