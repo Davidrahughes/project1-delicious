@@ -18,9 +18,10 @@ form{
     .form-flex {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
+        min-width: none;
     }
-    
     .big {
         margin: 20px 0 200px 0;
     }
