@@ -7,6 +7,7 @@
     <title>Delicious Home</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/e0f59df584.js" crossorigin="anonymous"></script>
+    <script async src="script.js"></script>
 </head>
 <body>
     <a href="#main-content" class="skip-link"> Skip to the main content.</a>
@@ -19,15 +20,15 @@
                         <h1>Delicious</h1>
                     </a>
                 </div>
-                <div class="menu-toggle-button">
+                <!-- <div class="menu-toggle-button">
                     <input id="menu-toggle" type="checkbox"/>
                     <label class='menu-button-container' for="menu-toggle">
                         <div class='menu-button'>
                         </div>
-                    </div>
-                </label>
+                    </label>
+                </div> -->
                 <div class="menu-container">
-                    <ul class="menu-hamburger">
+                    <ul class="menu-hamburger hidden">
                         <li><a href="./index.html">home</a></li>
                         <li><a href="#about">about</a></li>
                         <li><a href="#recipes">recipes</a></li>
@@ -45,8 +46,7 @@
                         <li><a href="#shop">shop</a></li>
                         <li><a href="./contact.html">contact</a></li>
                     </ul><!--end. menu-->
-                </div><!--end. menu-container-->
-                
+                </div><!--end. menu-container--> 
                 <div class="search-cart">
                     <div class="bag-counter-container">
                         <div class="bag-container">
@@ -63,6 +63,11 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button> 
                 </div><!-- end. search-cart -->
+                <div class="click-here">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div><!--end. nav-flex-->
         </div><!--end. wrapper-->
     </nav><!--end. nav-bar-->

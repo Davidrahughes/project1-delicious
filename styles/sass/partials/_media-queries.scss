@@ -83,23 +83,31 @@
     }  
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1049px) {
 
     .wrapper {
         max-width: 1000px;
-        width: 80%;
+        width: 90%;
     }
 
     .nav-bar {
-        flex-direction: column;
+        flex-direction: row;
 
         .nav-flex {
-            justify-content: right;
+            justify-content: end;
+            align-items: center;
             width: 100%;
 
-            .search-cart {
-                width: auto;
+            .click-here {
+                display: block;
+                position: fixed;
             }
+
+            .logo-container {
+                width: 90%;
+            }
+
+            
         }
 
         .nav-flex :nth-child(2) {order: 4;}
@@ -114,8 +122,22 @@
 
         .menu-button-container {
             display: flex;
-        }
+        }   
     }     
+
+    .nav-bar .nav-flex .search-cart {
+        width: auto;
+        padding-right: 50px;
+    }
+    .click-here.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .click-here.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .click-here.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
     //Tried my best to make this Hamburger work - but alas - no dice//
 
@@ -336,7 +358,7 @@
 
     .wrapper {
         max-width: 860px;
-        width: 100%;
+        width: 80%;
 
             &.blog {
                 width: 100%;
@@ -444,7 +466,7 @@
 
     .wrapper {
         max-width: 700px;
-        width: 100%;
+        width: 80%;
 
             &.blog {
                 width: 100%;
@@ -506,7 +528,7 @@
 
     .wrapper {
         max-width: 400px;
-        width: 100%;
+        width: 80%;
         margin: 0;
     }
 

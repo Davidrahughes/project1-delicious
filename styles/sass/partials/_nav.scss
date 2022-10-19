@@ -27,11 +27,6 @@
             width: 20%;
             margin-top: 20px;
         }
-
-        .menu-container {
-            width: 75%;
-            margin-top: 20px;
-        }
         
         .search-cart {
             display: flex;
@@ -77,53 +72,40 @@
         }
     }
 
-    #menu-toggle {
-        display: none;
-        padding: 20px;
-    }
     
-    .menu-button,
-    .menu-button::before,
-    .menu-button::after {
-        display: block;
-        background-color: rgba($color: $treegreen, $alpha: 0.6);
-        position: absolute;
-        height: 4px;
-        width: 30px;
-        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 2px;
+    .menu-hamburger {
+        top: 70px;
+        right: 50px;
+        padding-right: 10px;
+        background-color: beige;
+        flex-direction: column;
+        gap: 0;
+        position: fixed;
+        transition: 0.3s;
+        
     }
-    
-    .menu-button::before {
-        content: '';
-        margin-top: -8px;
-    }
-    
-    .menu-button::after {
-        content: '';
-        margin-top: 8px;
-    }
-    
-    #menu-toggle:checked+ .menu-button-container .menu-button::before {
-        margin-top: 0px;
-        transform: rotate(405deg);
-    }
-    
-    #menu-toggle:checked+ .menu-button-container .menu-button {
-        background: rgba($color: $treegreen, $alpha: 0.6);
-    }
-    
-    #menu-toggle:checked+ .menu-button-container .menu-button::after {
-        margin-top: 0px;
-        transform: rotate(-405deg);
-    }
-    
+
     .menu-hamburger a {
         text-decoration: none;
         color: inherit;
         text-transform: capitalize;
         display: inline-block;
         font-family: 'Lato', sans-serif;
+    }
+    
+    .click-here{
+        display: none;
+        cursor: pointer;
+    }
+
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out; 
+        transition: all 0.3s ease-in-out;
+        background-color: #2e992a;
     }
 
     .menu {
@@ -139,9 +121,7 @@
         }
     }
 
-    .menu-hamburger {
-    display: none;
-    }
+
 
     .logo {
         margin-top: 25px;
@@ -165,5 +145,14 @@
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
     align-items: center;
 }
